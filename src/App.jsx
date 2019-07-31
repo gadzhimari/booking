@@ -1,20 +1,16 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { HomeRoute, HotelRoute } from './routes';
 import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="container">
+        <Route exact path="/" component={HomeRoute} />
+        <Route exact path="/hotel" component={HotelRoute} />
+      </div>
+    </Router>
   );
 }
 

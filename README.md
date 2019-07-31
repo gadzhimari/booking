@@ -1,4 +1,4 @@
-Test assigment for Maxiru company
+Test assigment for Nitka company
 
 In the project directory, you can run:
 
