@@ -1,0 +1,11 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: $base-font-size;
+  font-weight: 600;
+  background-color: $white;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
