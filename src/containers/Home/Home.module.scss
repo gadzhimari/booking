@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
   height: 100vh;
 }
 
@@ -6,4 +7,13 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.inputWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 600px;
+  transform: translate(-50%, -50%);
 }
