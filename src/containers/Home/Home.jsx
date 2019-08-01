@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { SearchInput } from '../../components';
+import { HotelList, SearchInput } from '../../components';
+import hotels from './data';
 import bg from '../../assets/images/bg.jpg';
 import styles from './Home.module.scss';
 
@@ -21,6 +22,13 @@ class Home extends Component {
           </div>
           <img className={styles.bg} src={bg} alt="background" />
         </div>
+
+        <div className={styles.hotelsWrapper}>
+          <div className={styles.hotelList}>
+            <HotelList hotels={hotels} />
+          </div>
+        </div>
+
         {isActive}
       </div>
     );
